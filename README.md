@@ -1,7 +1,19 @@
-# id;title;category;description;value
-1;HTML;Основа;Структура и семантика документа;8
-2;CSS;Оформление;Стили и адаптивность;9
-3;Git;Инструменты;История изменений;7
-4;Forms;HTML;Пользовательский ввод;6
-5;Accessibility;Качество;Доступность интерфейса;10
-6;DevTools;Проверка;Исследование DOM и стилей;8
+[navigation.json](https://github.com/user-attachments/files/32608101/navigation.json)
+[
+  {
+    "label": "О курсе",
+    "target": "about"
+  },
+  {
+    "label": "Направления",
+    "target": "tracks"
+  },
+  {
+    "label": "Расписание",
+    "target": "schedule"
+  },
+  {
+    "label": "Регистрация",
+    "target": "signup"
+  }
+]
