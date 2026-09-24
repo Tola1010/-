@@ -1,15 +1,14 @@
-git init
-git remote add origin <URL-репозитория>
-trpo-pr01-student/
-├── index.html
-├── README.md
-├── .gitignore
-├── css/
-│   └── styles.css
-├── images/
-│   ├── logo.svg
-│   └── cover.svg
-├── data/
-│   ├── content.csv
-│   └── navigation.json
-└── docs/            (опционально — чек-листы, результаты проверок)
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Учебный проект</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">...</header>
+  <main>...</main>
+  <footer>...</footer>
+</body>
+</html>
