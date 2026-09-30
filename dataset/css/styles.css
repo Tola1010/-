@@ -1,0 +1,164 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #1f2937;
+  background: #f4f6fb;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.site-header {
+  background: #111827;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.site-header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.site-header nav a:focus {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+}
+
+main {
+  padding: 34px 24px;
+}
+
+.hero {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.06);
+  margin-bottom: 24px;
+}
+
+.pill {
+  display: inline-block;
+  background: #e9efff;
+  color: #315efb;
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+h2 {
+  margin-top: 32px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  flex: 1 1 16rem;
+  padding: 1rem;
+  border: 1px solid #d7d7d7;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.card h3 {
+  margin: 0 0 6px;
+}
+
+.card .value {
+  font-weight: 700;
+  color: #315efb;
+  margin: 8px 0 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  margin-top: 12px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 480px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+input, select, textarea, button {
+  padding: 10px;
+  font: inherit;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid #315efb;
+  outline-offset: 1px;
+}
+
+button {
+  background: #315efb;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+footer {
+  padding: 24px;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .site-header nav a {
+    margin: 0 1rem 0 0;
+  }
+  .card {
+    flex: 1 1 100%;
+  }
+}

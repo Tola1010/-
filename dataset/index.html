@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ПР1 Ким Анатолий</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <span class="brand">Практическая работа 1 Ким Анатолий ЭПБО-02-25</span>
+      <nav aria-label="Основная навигация">
+        <a href="#about">О курсе</a>
+        <a href="#tracks">Направления</a>
+        <a href="#schedule">Расписание</a>
+        <a href="#signup">Регистрация</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="hero">
+      <span class="pill">HTML + CSS</span>
+      <h1>Информационный портал курса kim</h1>
+      <p class="muted">Данные взяты из dataset: content.csv и navigation.json.</p>
+    </section>
+
+    <section id="tracks">
+      <h2>Направления</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>HTML</h3>
+          <p class="muted">Основа</p>
+          <p>Структура и семантика документа</p>
+          <p class="value">Значение: 8</p>
+        </article>
+        <article class="card">
+          <h3>CSS</h3>
+          <p class="muted">Оформление</p>
+          <p>Стили и адаптивность</p>
+          <p class="value">Значение: 9</p>
+        </article>
+        <article class="card">
+          <h3>Git</h3>
+          <p class="muted">Инструменты</p>
+          <p>История изменений</p>
+          <p class="value">Значение: 7</p>
+        </article>
+        <article class="card">
+          <h3>Forms</h3>
+          <p class="muted">HTML</p>
+          <p>Пользовательский ввод</p>
+          <p class="value">Значение: 6</p>
+        </article>
+        <article class="card">
+          <h3>Accessibility</h3>
+          <p class="muted">Качество</p>
+          <p>Доступность интерфейса</p>
+          <p class="value">Значение: 10</p>
+        </article>
+        <article class="card">
+          <h3>DevTools</h3>
+          <p class="muted">Проверка</p>
+          <p>Исследование DOM и стилей</p>
+          <p class="value">Значение: 8</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <h2>Расписание</h2>
+      <table>
+        <thead>
+          <tr><th>Тема</th><th>Категория</th><th>Значение</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>HTML</td><td>Основа</td><td>8</td></tr>
+          <tr><td>CSS</td><td>Оформление</td><td>9</td></tr>
+          <tr><td>Git</td><td>Инструменты</td><td>7</td></tr>
+          <tr><td>Forms</td><td>HTML</td><td>6</td></tr>
+          <tr><td>Accessibility</td><td>Качество</td><td>10</td></tr>
+          <tr><td>DevTools</td><td>Проверка</td><td>8</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="signup">
+      <h2>Регистрация</h2>
+      <form>
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" required minlength="2" maxlength="40">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="direction">Направление</label>
+        <select id="direction" name="direction" required>
+          <option value="">— выберите —</option>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="git">Git</option>
+          <option value="forms">Forms</option>
+        </select>
+
+        <label for="experience">Опыт (лет)</label>
+        <input type="number" id="experience" name="experience" min="0" max="50" required>
+
+        <label for="comment">Комментарий</label>
+        <textarea id="comment" name="comment" maxlength="300"></textarea>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p class="muted">© 2026 Практическая работа 1 — ТРПО</p>
+  </footer>
+</body>
+</html>
